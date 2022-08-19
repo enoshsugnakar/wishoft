@@ -7,7 +7,7 @@ import Widgets from "../components/Widgets";
 
 const style = {
   wrapper:
-    "flex justify-center h-screen w-screen select-none bg-slate-200 text-white",
+    "flex  justify-center h-screen w-screen select-none bg-slate-200 text-white",
   content: "w-screen flex justify-between",
 };
 

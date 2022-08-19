@@ -1,17 +1,44 @@
+import Image from "next/image";
+import {BsThreeDots} from "react-icons/bs";
+import {AiOutlineMessage} from "react-icons/ai";
+
 export default function ThanksWidget() {
   return (
     <div>
-      <div className="p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-        <a href="#">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-            Noteworthy technology acquisitions 2021
-          </h5>
-        </a>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-          Here are the biggest enterprise technology acquisitions of 2021 so
-          far, in reverse chronological order.
+      <div className="p-3 max-w-sm bg-blue-100 rounded-xl dark:bg-slate-800 dark:border-gray-700">
+        
+        <div className="flex items-center py-3 space-x-3">
+              <Image
+                className="rounded-full cursor-pointer"
+                src="/favicon.ico"
+                alt="userimage"
+                width={50}
+                height={50}
+                objectFit="contain"
+              ></Image>
+              
+              <div className="flex-col mx-auto">
+                <h5 className="font-medium text-sm text-slate-800 dark:text-white cursor-pointer" >Enosh Bunny</h5>
+                <h5 className=" text-[10px] mt-1 text-slate-500 dark:text-blue-300">
+                  Just Now
+                </h5>
+              </div>
+              
+              
+            </div>
+        {/* message */}
+        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 ml-2">
+          Bunny just contributed <span className="dark:text-blue-100 text-slate-900 font-bold"> $200 </span>for your campaign.
         </p>
-        <a
+        <div className="inline-flex">
+          <button className="inline-flex items-center bg-blue-600 rounded-md text-gray-50 py-2 w-44 px-12">
+             Thank you
+          </button>
+          <button className="inline-flex items-center bg-blue-600 text-gray-50 rounded-md px-2 py-1 ml-2">
+              <AiOutlineMessage size={22} />
+          </button>
+        </div>
+        {/* <a
           href="#"
           className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
@@ -29,7 +56,7 @@ export default function ThanksWidget() {
               clipRule="evenodd"
             ></path>
           </svg>
-        </a>
+        </a> */}
       </div>
     </div>
   );
