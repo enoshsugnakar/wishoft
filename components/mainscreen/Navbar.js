@@ -48,17 +48,22 @@ export default function Navbar() {
 
       <nav className="bg-slate-200 border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800">
         <div className="container flex flex-wrap justify-between items-center mx-auto">
-          <a href="#" className="flex items-center">
-            <div className="lg:hidden">
+          <a href="#" className=" lg:hidden flex items-center">
+            <div className=" flex">
               <Image
-                src="/Wishlore.svg"
-                height="40"
-                width={120}
+                src="/wishoft.svg"
+                height={50}
+                width={50}
                 objectFit="contain"
                 className="lg:hidden"
               />
+              
             </div>
+            <h1 className=" font-bold tracking-tight text-2xl mt-2 ml-1 text-slate-800 dark:text-slate-100">
+            wishoft
+          </h1>
           </a>
+          
 
           <div className="flex md:order-2">
             <button

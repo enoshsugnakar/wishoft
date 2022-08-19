@@ -7,14 +7,21 @@ export default function Sidebar() {
       <aside className="w-64" aria-label="Sidebar">
         <div className="overflow-y-auto h-screen py-4 px-3 bg-slate-100 dark:bg-slate-900">
           <div className=" justify-between">
-            <div className=" mb-5 flex">
+          <a href="#" className="flex mb-5 items-center">
+            <div className=" flex">
               <Image
-                src="/Wishlore.svg"
-                height="40"
-                width={150}
+                src="/wishoft.svg"
+                height={50}
+                width={50}
                 objectFit="contain"
+                className="lg:hidden"
               />
+              
             </div>
+            <h1 className=" font-bold tracking-tight text-2xl mt-2 ml-1 text-slate-800 dark:text-slate-100">
+            wishoft
+          </h1>
+          </a>
             <ul className="space-y-2">
               <li>
                 <a
@@ -205,7 +212,7 @@ export default function Sidebar() {
             </div>
             <div />
 
-            <div className="flex items-center rounded-lg shadow-md backdrop-blur-md dark:bg-blue-500/30 bg-slate-300/30 p-3 space-x-4 ml-2 mt-24 align-bottom">
+            <div className="flex items-center rounded-lg shadow-md backdrop-blur-md dark:bg-blue-500/30 bg-slate-300/30 p-3 space-x-4 ml-2 mt-[70px] align-bottom">
               <Image
                 className="rounded-full"
                 src="/favicon.ico"
