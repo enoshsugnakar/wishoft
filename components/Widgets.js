@@ -9,8 +9,8 @@ export default function Widgets() {
 
   return (
     <div className="hidden lg:flex">
-      <div className="flex-col w-80 h-screen p-2 dark:bg-slate-800 bg-slate-200 overflow-hidden ">
-        <div className="py-3 bg-slate-200  dark:bg-slate-800 duration-300  ">
+      <div className="flex-col w-96 h-screen p-2 dark:bg-slate-800 bg-slate-200 overflow-hidden ">
+        <div className="mb-5 bg-slate-200  dark:bg-slate-800  ">
           <button
            onClick={() => setDopen(!dopen)}
            className="flex items-center justify-end ml-auto  rounded-xl focus:ring-4 bg-blue-50 dark:bg-slate-900 p-2 focus:ring-gray-300 dark:focus:ring-gray-700 dark:text-white">
@@ -84,10 +84,10 @@ export default function Widgets() {
           </div>
         </div>
         <div className="flex-col p-5  dark:bg-slate-900 bg-blue-50 rounded-lg space-y-3 pt-5  ">
-          <h4 className="text-xl font-semibold text-left ml-2 bg:white dark:text-gray-400 text-slate-700 snap-start">
+          <h4 className="text-xl font-semibold text-left ml-2 bg:white dark:text-gray-400 text-slate-700 scroll-pb-3 snap-y">
             Recent activity
           </h4>
-          <div className=" h-screen overflow-scroll space-y-2 dark:scrollbar-dark scrollbar">
+          <div className=" h-screen overflow-scroll scroll-smooth space-y-2 dark:scrollbar-dark scrollbar">
           <ThanksWidget />
           <ThanksWidget />
           <ThanksWidget />

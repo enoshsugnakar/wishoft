@@ -31,7 +31,7 @@ export default function ThanksWidget() {
           Bunny just contributed <span className="dark:text-blue-100 text-slate-900 font-bold"> $200 </span>for your campaign.
         </p>
         <div className="inline-flex">
-          <button className="inline-flex items-center bg-blue-600 rounded-md text-gray-50 py-2 w-44 px-12">
+          <button className="inline-flex items-center bg-blue-600 rounded-md text-gray-50 py-2 w-64 px-[88px]">
              Thank you
           </button>
           <button className="inline-flex items-center bg-blue-600 text-gray-50 rounded-md px-2 py-1 ml-2">
